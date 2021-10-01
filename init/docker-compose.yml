@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      RAILS_DB_HOST: $RAILS_DB_HOST
+      RAILS_DB_NAME: $RAILS_DB_NAME
+      RAILS_DB_USER: $RAILS_DB_USER
+      RAILS_DB_PASS: $RAILS_DB_PASS
